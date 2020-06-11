@@ -1,0 +1,91 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header .fondo-hero{
+    position: relative;
+}
+
+header .fondo-hero img{
+    width: 100vw;
+    height: 60vh;
+    object-fit: cover;
+}
+
+.fondo-hero .overlay{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+.fondo-hero #fondo-hero-container,
+.fondo-hero .overlay #fondo-hero-overlay{
+    height: 100%;
+}
+
+.fondo-hero span{
+    font-size: 42px;
+    font-family: 'Dancing Script', cursive;
+
+}
+
+.fondo-hero h1{
+    font-size: 73px;
+    font-family: 'Dancing Script', cursive;
+}
+
+/* SECTION */
+.column{
+    margin: 0;
+    padding: 0;
+}
+
+.caja{
+    margin: 0;
+    padding: 0;
+    /* width: 318px; */
+    height: 266px;
+    position: relative;
+}
+
+section #img1{
+    background: url('9195-min.jpg');
+    background-size: cover;
+}
+
+section #img2{
+    background: url('accesorios.jpg');
+    background-size: cover;
+}
+
+section #img3{
+    background: url('7543-min.jpg');
+    background-size: cover;
+}
+
+section #img4{
+    background: url('8901-min.jpg');
+    background-size: cover;
+}
+
+.title{
+    height: 90px;
+    background: rgba(0,0,0, .3);
+    display: none;
+    color: white;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.caja:hover .title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

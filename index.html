@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav id="nav" class="navbar navbar-expand-md navbar-light fixed-top">
+          
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Productos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Sobre Nosotros</a>
+                </li>
+              </ul>
+            </div>
+        </nav>
+
+        <div class="fondo-hero">
+            <img src="551-min.jpg" alt="fondo hero">
+            <div class="overlay">
+                <div id="fondo-hero-container" class="container">
+                    <div id="fondo-hero-overlay" class="row align-items-center">
+                        <div class="col-md-6 offset-md-6">
+                            <h1>Nacar<br><span>Moda con proposito</span></h1>
+                            <!-- <a class="btn btn-outline-light" href="/">Conoce mas sobre nosotros</a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-3 column">
+                    <div id="img1" class="caja">
+                        <div class="title">BOLSOS</div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 column">
+                    <div id="img2" class="caja">
+                        <div class="title">ACCESORIOS</div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 column">
+                    <div id="img4" class="caja">
+                        <div class="title">CHAQUETAS</div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 column">
+                    <div id="img3" class="caja">
+                        <div class="title">MODA</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        $(document).ready(function(){
+          $(window).scroll(function(){
+            var scroll = $(window).scrollTop();
+            if(scroll > 25){
+              $('#nav').css('background' , '#1c7999de');
+            } else {
+              $('#nav').css('background', 'transparent');
+            }
+          })
+        })
+      </script>
+</body>
+</html>
+
+<!-- 1c7999b5 1b7999 1c7999c9-->
