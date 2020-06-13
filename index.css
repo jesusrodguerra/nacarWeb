@@ -8,7 +8,7 @@ header .fondo-hero{
 }
 
 header .fondo-hero img{
-    width: 100vw;
+    width: 99vw;
     height: 60vh;
     object-fit: cover;
 }
@@ -89,6 +89,14 @@ section #img4{
     justify-content: center;
 }
 
+section .caja .title a{
+    border: 1px solid white;
+    color: white;
+    margin-left: 12px;
+}
+
+/* Carousel */
+
 .container-fluid{
     padding: 0;
 }
@@ -107,4 +115,64 @@ section #img4{
 .contenedor .banner img{
     width: 100%;
     height: 100%;
+}
+
+/* Carousel de productos detallados */
+
+.carusel{
+    width: 100%;
+    overflow: scroll;
+}
+
+.carusel::-webkit-scrollbar{
+    width:0px;
+}
+
+.contenedor{
+    margin-right: 12px;
+    position: relative;
+}
+
+.contenedor .contenedor-desc a{
+    margin-top: 0;
+}
+
+.contenedor-img img{
+    width: 280px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.contenedor-desc{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background: rgba(0,0,0, 0.4);
+    display: none;
+    color: white;
+}
+.contenedor-img:hover .contenedor-desc{
+    display: inline;
+}
+
+.contenedor:hover .contenedor-desc a{
+    color: aliceblue;
+    cursor: pointer;
+}
+
+@media (max-width: 376px){
+    .carousel-inner img {
+        width: 100%;
+        height:250px;
+        object-fit: cover;
+    }
+    
+    .contenedor .banner img{
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
 }
